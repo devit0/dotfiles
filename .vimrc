@@ -37,9 +37,9 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 " Incluye el fichero de plugins  
-source /home/it0/.vim/vimplugins.vim
+source $HOME/.vim/vimplugins.vim
 " Incluye el fichero de mapeos
-source /home/it0/.vim/vimmaps.vim
+source $HOME/.vim/vimmaps.vim
 " Permite abandonar los buffers
 set hidden
 " Al abrir la ayuda la deja únicamente en vertical

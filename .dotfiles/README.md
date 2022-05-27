@@ -17,6 +17,7 @@ rm --recursive dotfiles-tmp
 Es necesario que en el pc no existan ninguno de los ficheros que se van a copiar o dara error
 
 El primer paso es crear un repo git bare
+<<<<<<< HEAD
 
 ~~~
 git init --bare $HOME/.dotfiles
@@ -30,13 +31,34 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 Configuramos el repositorio
 
+=======
+
+~~~
+git init --bare $HOME/.dotfiles
+~~~
+
+Luego creamos un alias "config" que trabaje con los ficheros directamente sobre ese file y lo metemos en el .bashrc
+
+~~~
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+~~~
+
+Configuramos el repositorio
+
+>>>>>>> c02d3c7a1def8d2f74c3430b2c09a7038153ec2c
 ~~~
 config config status.showUntrackedFiles no
 config remote set-url origin https://github.com/devit0/dotfiles.git 
 ~~~
+<<<<<<< HEAD
 
 ## Configurar otro pc para descargar el repo existente y poder pushear cambios
 
+=======
+
+## Configurar otro pc para descargar el repo existente y poder pushear cambios
+
+>>>>>>> c02d3c7a1def8d2f74c3430b2c09a7038153ec2c
 ~~~
 git pull origin master
 ~~~
