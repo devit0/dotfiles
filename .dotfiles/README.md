@@ -52,6 +52,6 @@ config push
 
 ## Enlaces de referencia
 
-[https://news.ycombinator.com/item?id=11070797]
+https://news.ycombinator.com/item?id=11070797
 
-[https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles]
+https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles
