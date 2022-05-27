@@ -1,3 +1,20 @@
+# GESTIÓN DE .DOTFILES
+
+## LLevar los ficheros a cualquier otro pc
+
+~
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/devit0/dotfiles.git dotfiles-tmp
+
+rsync --recursive --verbose --exclude '.git' dotfiles-tmp/ $HOME/
+
+rm --recursive dotfiles-tmp
+~
+
+## Configurar otro pc para recibir los ficheros y poder realizar cambios
+
+Es necesario que en el pc no existan ninguno de los ficheros que se van a copiar o dara error
+
+
 *********************
 HOW TO SET UP
 *********************
@@ -11,9 +28,6 @@ config config status.showUntrackedFiles no
 REPLICAR EL REPOSITORIO
 *********************
 
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/devit0/dotfiles.git dotfiles-tmp
-rsync --recursive --verbose --exclude '.git' dotfiles-tmp/ $HOME/
-rm --recursive dotfiles-tmp
 
 *********************
 CONFIGURAR EL REPOSITORIO
