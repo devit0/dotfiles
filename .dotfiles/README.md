@@ -27,3 +27,10 @@ config status
 config add .gitconfig
 config commit -m 'Add gitconfig'
 config push
+
+*********************
+ENLACES DE REFERENCIA
+*********************
+https://news.ycombinator.com/item?id=11070797
+
+https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles
