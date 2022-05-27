@@ -2,13 +2,13 @@
 
 ## LLevar los ficheros a cualquier otro pc
 
-~
+~~~
 git clone --separate-git-dir=$HOME/.dotfiles https://github.com/devit0/dotfiles.git dotfiles-tmp
 
 rsync --recursive --verbose --exclude '.git' dotfiles-tmp/ $HOME/
 
 rm --recursive dotfiles-tmp
-~
+~~~
 
 ## Configurar otro pc para recibir los ficheros y poder realizar cambios
 
