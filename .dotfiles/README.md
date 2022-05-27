@@ -2,7 +2,9 @@
 HOW TO SET UP
 *********************
 git init --bare $HOME/.myconf
+
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 config config status.showUntrackedFiles no
 
 *********************
