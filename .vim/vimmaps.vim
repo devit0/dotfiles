@@ -53,3 +53,5 @@ noremap <C-l> <C-w>l
 " Abre buffer en horizontal y vertical
 nmap <leader>sb :ls <CR>:sb
 nmap <leader>vb :ls <CR>:vert sb
+" Abre un terminal
+nmap tt :term<CR>
