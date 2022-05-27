@@ -50,6 +50,19 @@ config commit -m 'Add gitconfig'
 config push
 ~~~
 
+## Para bajar un fichero específico del repositorio y actualizar un fichero 
+
+Hay que ir a la ruta en la que esté el fichero que se quiera actualizar
+
+~~~
+config fetch
+~~~
+
+~~~
+config checkout origin/master -- path\_to\_file
+~~~
+
+
 ## Enlaces de referencia
 
 https://news.ycombinator.com/item?id=11070797
