@@ -84,6 +84,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
     alias sudo='sudo -E'
     alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    alias python='/usr/local/bin/python3.8'
 fi
 
 # colored GCC warnings and errors

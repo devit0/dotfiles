@@ -55,3 +55,9 @@ nmap <leader>sb :ls <CR>:sb
 nmap <leader>vb :ls <CR>:vert sb
 " Abre un terminal
 nmap tt :term<CR>
+
+" Para ficheros .py guarda y ejecuta
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!clear' <CR> :exec '!python3.8' shellescape(@%, 1)<CR>
+"autocmd FileType python map <buffer> <F9> :w<CR>:exec '!clear'<CR> :exec '!ls -lrt'<CR>
+
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3.8' shellescape(@%, 1)<CR>
