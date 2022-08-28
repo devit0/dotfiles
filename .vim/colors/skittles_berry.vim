@@ -11,8 +11,10 @@ hi SpecialKey     ctermfg=235 guifg=#262626
 hi NonText        ctermfg=250 guifg=#bcbcbc
 hi Directory      ctermfg=149 gui=bold guifg=#afd75f
 hi ErrorMsg       term=standout ctermfg=117 gui=bold guifg=#87d7ff
-hi IncSearch      term=reverse ctermfg=186 ctermbg=none guifg=#d7d787 guibg=#000000
-hi Search         term=reverse ctermfg=15 ctermbg=none guifg=#ffffff guibg=#455354
+"hi IncSearch      term=reverse ctermfg=186 ctermbg=none guifg=#d7d787 guibg=#000000
+hi IncSearch      term=reverse ctermfg=186 ctermbg=9 guifg=#d7d787 guibg=#000000
+"hi Search         term=reverse ctermfg=15 ctermbg=none guifg=#ffffff guibg=#455354
+hi Search         term=reverse ctermfg=15 ctermbg=9 guifg=#ffffff guibg=#455354
 hi MoreMsg        ctermfg=228 guifg=#ffff87
 hi ModeMsg        ctermfg=228 guifg=#ffff87
 hi LineNr         ctermfg=15 ctermbg=none guifg=#ffffff guibg=#000000
@@ -22,8 +24,10 @@ hi StatusLineNC   term=reverse ctermfg=8 ctermbg=none guifg=#7f7f7f guibg=#08080
 hi VertSplit      term=reverse ctermfg=8 ctermbg=none gui=bold guifg=#7f7f7f guibg=#080808
 hi Title          ctermfg=209 guifg=#ff875f
 " Cambia el color de fondo de la selección visual
-hi Visual         term=reverse ctermfg=255 ctermbg=8 guifg=#eeeeee guibg=#875f5f
-hi VisualNOS      ctermfg=255 ctermbg=none guifg=#eeeeee guibg=#875f5f
+"hi Visual         term=reverse ctermfg=255 ctermbg=8 guifg=#eeeeee guibg=#875f5f
+hi Visual         term=reverse ctermfg=255 ctermbg=9 guifg=#eeeeee guibg=#875f5f
+"hi VisualNOS      ctermfg=255 ctermbg=none guifg=#eeeeee guibg=#875f5f
+hi VisualNOS      ctermfg=255 ctermbg=9 guifg=#eeeeee guibg=#875f5f
 hi WarningMsg     term=standout ctermfg=15 ctermbg=none gui=bold guifg=#ffffff guibg=#303030
 hi WildMenu       term=standout ctermfg=81 ctermbg=none guifg=#5fd7ff guibg=#121212
 hi Folded         term=standout ctermfg=66 ctermbg=none guifg=#465457 guibg=#000000

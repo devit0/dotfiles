@@ -1,5 +1,7 @@
 """ Fuera la compatibilidad con VI
 set nocompatible
+set encoding=UTF-8
+set guifont=hack
 " Habilitar sintaxis
 syntax on
 " Mostrar el número de línea
@@ -56,3 +58,5 @@ set path+=**
 
 " Display all matching files when we tab complete
 set wildmenu
+
+set backspace =indent,eol,start

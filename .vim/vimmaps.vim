@@ -15,11 +15,12 @@ ino <left>  <Nop>
 imap kj <ESC>
 vmap kj <ESC>
 " Empareja los símbolos
-imap <leader>' ''<ESC>i
-imap <leader>" ""<ESC>i
-imap <leader>( ()<ESC>i
-imap <leader>[ []<ESC>i
-imap <leader>{ {}<ESC>i
+imap <leader>' ''<++><ESC>4hi
+imap <leader>" ""<++><ESC>4hi
+imap <leader>( ()<++><ESC>4hi
+imap <leader>[ []<++><ESC>4hi
+imap <leader>{ {}<++><ESC>4hi
+inoremap <leader><TAB> <ESC>/<++><CR>:nohl<CR>"_c4l
 "Ejemplo dejando espacio --> imap <leader>{ <space>{}<ESC>i
 " Escribe ; al final de la línea
 nmap <leader>; A;<ESC>
@@ -57,7 +58,8 @@ nmap <leader>vb :ls <CR>:vert sb
 nmap tt :term<CR>
 
 " Para ficheros .py guarda y ejecuta
-autocmd FileType python map <buffer> <F9> :w<CR>:exec '!clear' <CR> :exec '!python3.8' shellescape(@%, 1)<CR>
-"autocmd FileType python map <buffer> <F9> :w<CR>:exec '!clear'<CR> :exec '!ls -lrt'<CR>
+autocmd FileType python map  <buffer> <F9> :w<CR>:exec '!clear' <CR> :exec '!python3.8' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!clear' <CR>:exec '!python3.8' shellescape(@%, 1)<CR>
 
-autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3.8' shellescape(@%, 1)<CR>
+"  Cierra todos los buffers existentes
+nmap <leader>Q :%bdelete!<CR>

@@ -7,7 +7,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 source ~/.vim/plugins/vundle.vim
 source ~/.vim/plugins/nerdtree.vim
-"source ~/.vim/plugins/ctrlp.vim
+source ~/.vim/plugins/coc.vim
+source ~/.vim/plugins/devicons.vim
 "Plugin 'scrooloose/syntastic'
 "Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 "Plugin 'ervandew/screen'
