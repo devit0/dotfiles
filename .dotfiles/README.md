@@ -2,34 +2,34 @@
 
 ## LLevar los ficheros a cualquier otro pcc
 
-## Esto es una prueba
-
----
-
 ~~~bash
 git clone --separate-git-dir=$HOME/.dotfiles https://github.com/devit0/dotfiles.git dotfiles-tmp
 ~~~
 
-~~~
+~~~bash
 rsync --recursive --verbose --exclude '.git' dotfiles-tmp/ $HOME/
 ~~~
-~~~
+
+~~~bash
 rm --recursive dotfiles-tmp
 ~~~
 
-## Configurar otro pc para meter sus ficheros de configuración en el repo (si el repo no existe)
+## Si el repo no existe
 
-Es necesario que en el pc no existan ninguno de los ficheros que se van a copiar o dara error
+### Configurar otro pc para meter sus ficheros de configuración en el repo
+
+Es necesario que en el pc no existan ninguno de los ficheros que se van a copiar  
+o dara error
 
 El primer paso es crear un repo git bare
 
-~~~
+~~~bash
 git init --bare $HOME/.dotfiles
 ~~~
 
 Luego creamos un alias "config" que trabaje con los ficheros directamente sobre ese file y lo metemos en el .bashrc
 
-~~~
+~~~bash
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ~~~
 
@@ -37,19 +37,19 @@ Configuramos el repositorio
 
 =======
 
-~~~
+~~~bash
 git init --bare $HOME/.dotfiles
 ~~~
 
 Luego creamos un alias "config" que trabaje con los ficheros directamente sobre ese file y lo metemos en el .bashrc
 
-~~~
+~~~bash
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ~~~
 
 Configuramos el repositorio
 
-~~~
+~~~bash
 config config status.showUntrackedFiles no
 config remote set-url origin https://github.com/devit0/dotfiles.git 
 ~~~
@@ -58,15 +58,13 @@ config remote set-url origin https://github.com/devit0/dotfiles.git
 
 =======
 
-## Configurar otro pc para descargar el repo existente y poder pushear cambios
-
-~~~
+~~~bash
 git pull origin master
 ~~~
 
 ## Para llevar cambios al repositorio
 
-~~~
+~~~bash
 config status
 config add .gitconfig
 config commit -m 'Add gitconfig'
@@ -77,20 +75,18 @@ config push
 
 Hay que ir a la ruta en la que esté el fichero que se quiera actualizar
 
-~~~
+~~~bash
 config fetch
 ~~~
 
-~~~
+~~~bash
 config checkout origin/master -- path\_to\_file
 ~~~
-
 
 ## Enlaces de referencia
 
 https://news.ycombinator.com/item?id=11070797
 
 https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles
-
 
 it0
