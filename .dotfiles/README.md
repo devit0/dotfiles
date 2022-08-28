@@ -6,10 +6,10 @@
 
 ---
 
----
-~~~
+~~~bash
 git clone --separate-git-dir=$HOME/.dotfiles https://github.com/devit0/dotfiles.git dotfiles-tmp
 ~~~
+
 ~~~
 rsync --recursive --verbose --exclude '.git' dotfiles-tmp/ $HOME/
 ~~~
