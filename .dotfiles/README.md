@@ -2,6 +2,10 @@
 
 ## LLevar los ficheros a cualquier otro pcc
 
+## Esto es una prueba
+
+---
+
 ---
 ~~~
 git clone --separate-git-dir=$HOME/.dotfiles https://github.com/devit0/dotfiles.git dotfiles-tmp
