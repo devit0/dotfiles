@@ -16,7 +16,7 @@ rm --recursive dotfiles-tmp
 
 ## Para llevar cambios al repositorio desde ese PC
 
-En este caso el fichero .gitconfig es solo un ejemplo (muy mal escogido )
+En este caso el fichero .gitconfig es solo un ejemplo (muy mal escogido)
 
 ~~~bash
 config status
@@ -62,8 +62,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ~~~
 
 Configuramos el repositorio
-
-=======
 
 ~~~bash
 git init --bare $HOME/.dotfiles
